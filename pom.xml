@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>admin</groupId>
+  <artifactId>admin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <build>
+	  <plugins>
+		  <plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-war-plugin</artifactId>
+			  <version>3.4.0</version>
+		  </plugin>
+	  </plugins>
+  </build>
+  
+  <properties>
+	  <maven.compiler.source>1.8</maven.compiler.source>
+	  <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+	  <!-- tomcat-servlet-api(tomcat 서버와 servlet 결합)->servlet  -->
+	<dependency>
+	    <groupId>org.apache.tomcat</groupId>
+	    <artifactId>tomcat-servlet-api</artifactId>
+	    <version>8.5.85</version>
+	</dependency>
+	<!--spring-webmvc : spring에서 mvc를 명확하게 사용하기 위한 라이브러리-->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.2.25.RELEASE</version>
+</dependency>
+<!-- commons-fileupload : 파일업로드-->
+<dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.5</version>
+</dependency>
+<!-- commons-dbcp : Database 연결 라이브러리 = xml에사용 -->
+<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.4</version>
+</dependency>
+<!-- mysql-connector-java : mysql Connection 이용하여 연결 -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.49</version>
+</dependency>
+<!-- json-simple : json, xml을 파싱,파서 -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+<!-- jstl : -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.4.6</version>
+</dependency>
+
+<!-- lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.28</version>
+    <scope>provided</scope>
+</dependency>
+<!-- mybatis -->
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis</artifactId>
+    <version>3.2.8</version>
+</dependency>
+<!-- mybatis-spring -->
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis-spring</artifactId>
+    <version>1.2.5</version>
+</dependency>
+<!--javax.inject -->
+<dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+</dependency>
+<!-- spring-jdbc -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>5.2.25.RELEASE</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+<dependency>
+    <groupId>commons-net</groupId>
+    <artifactId>commons-net</artifactId>
+    <version>3.6</version>
+</dependency>
+
+
+
+  </dependencies>
+</project>
