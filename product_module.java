@@ -8,10 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Repository("product")
 public class product_module {
 	/* CDN 서버 정보 */
-	String host= "iup.cdn1.cafe24.com";
-	String user = "fluc5493";
-	String password = "sk85712564";
-	int port = 21;
+	
 
 	
 	@Resource(name="sqlsession")
